@@ -18,7 +18,29 @@ if (age > 0) and (age < 75) and (name != 'Иван'):
         
 #4
 seconds = int(input())
-print(seconds // 86400,' Дней',seconds // 3600,' Часов',seconds // 60,' минут',seconds,' Секунд')
+
+if (seconds//86400)>=1:
+    print(seconds//86400,'дней')
+    seconds = seconds%86400
+else:
+    print('0 дней')
+
+if (seconds//3600)>=1:
+    print(seconds//3600,'часов')
+    seconds = seconds%3600
+else:
+    print('0 часов')
+
+if (seconds//60)>=1:
+    print(seconds//60,'минут')
+    seconds = seconds%60
+else:
+    print('0 минут')
+if seconds >1:
+    print(seconds,'секунд')
+else:
+    print('0 секунд')
+
 
 
 #5
