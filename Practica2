@@ -34,7 +34,6 @@ z = 21
 s = (math.log((y**(-abs(x)**(1/2))))) *(x-(y/2)) + (math.sin(math.atan(z)))**2  
 print(s)
 
-import math
 #6
 x = 16.55*(10**-3)
 y = -2.75
