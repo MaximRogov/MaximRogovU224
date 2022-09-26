@@ -10,6 +10,14 @@ b = int(input())
 S = 1/2 * a*b
 print(S)
 
+#3
+def F(X):       
+    chasi = X//60%24
+    minuti = X%24
+    return chasi
+    return minuti
+print(1223123)
+
 def F(a, b, c):                     #5
     if (a > b) and (c > b):
         return b
@@ -44,9 +52,4 @@ def F(x):               #7
 def F(a,b,l,N):             #6
     return a+(2*a*N)+(2*b*N)+l
 
-def F(X):       #3
-    chasi = X//60
-    minuti = X%60
-    return chasi
-    return minuti
-print(1223123)
+
