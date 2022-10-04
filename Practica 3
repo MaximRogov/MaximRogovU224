@@ -34,6 +34,10 @@ def F(a, b, c):                     #5
         return a
     if (b > c) and (a > c):
         return c
+a = int(input())
+b = int(input())
+c = int(input())
+print(F(a,b,c))
 
 
 def F(a, b, c):         #8
@@ -46,19 +50,22 @@ def F(a, b, c):         #8
 
 def F(n,m,k):       #9
     if (m*n)//k:
-        return Да
+        return('y')
     else:
-        return Нет
+        return ('n')
 
 
 
 
 def F(x):               #7
     if (x//4==0) and (x//100!=0) and (x//400!=0):
-        return Да
+        return ('y')
+    else:
+        return('n')
 
 
 def F(a,b,l,N):             #6
-    return a+(2*a*N)+(2*b*N)+l
+    return (a+(2*a*N)+(2*b*N)+l)
+
 
 
