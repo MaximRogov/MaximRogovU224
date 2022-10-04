@@ -11,12 +11,21 @@ S = 1/2 * a*b
 print(S)
 
 #3
-def F(X):       
-    chasi = X//60%24
-    minuti = X%24
-    return chasi
-    return minuti
-print(1223123)
+def func(x):
+    hours = n % (60 * 24) // 60
+    minutes = n % 60
+    print(hours, minutes)
+n = int(input())
+func(n)
+
+#4
+def F(a,b,L,N):
+    return(2 * L + (2 * N - 1) * a + 2 * (N - 1) * b)
+x = int(input())
+y = int(input())
+z = int(input())
+w = int(input())
+print(F(x,y,z,w))
 
 def F(a, b, c):                     #5
     if (a > b) and (c > b):
