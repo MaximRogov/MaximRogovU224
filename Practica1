@@ -14,32 +14,20 @@ if (age > 0) and (age < 75) and (name != 'Иван'):
         print('Поздравляем вы поступили в ВГУИТ',name)
     if age < 16:
         print('Сначала нужно окончить школу! Вам осталось учится: ',16-age)
+else:
+    print('Данные введены не коррктно')
 
         
 #4
 seconds = int(input())
+print(seconds//86400,'дней')
+seconds = seconds%86400
+print(seconds//3600,'часов')
+seconds = seconds%3600
+print(seconds//60,'минут')
+seconds = seconds%60
+print(seconds,'секунд')
 
-if (seconds//86400)>=1:
-    print(seconds//86400,'дней')
-    seconds = seconds%86400
-else:
-    print('0 дней')
-
-if (seconds//3600)>=1:
-    print(seconds//3600,'часов')
-    seconds = seconds%3600
-else:
-    print('0 часов')
-
-if (seconds//60)>=1:
-    print(seconds//60,'минут')
-    seconds = seconds%60
-else:
-    print('0 минут')
-if seconds >1:
-    print(seconds,'секунд')
-else:
-    print('0 секунд')
 
 
 
