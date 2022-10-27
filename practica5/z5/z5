@@ -1,0 +1,10 @@
+def f(s):
+  print(len(s))
+s = []
+d = -1
+while True:
+  d = int(input())
+  if d ==0:
+    break
+  s.append(d)
+f(s)
