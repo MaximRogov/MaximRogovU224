@@ -1,1 +1,13 @@
+n = int(input())
+def f(n):
+  if n >=2:
+    i = 2
+    while i<=n:
+      if (n%i==0) and (i!=1):
+        print(i)
+        break
+      i = i+1
+  else:
+    print('error')
 
+f(n)
