@@ -1,0 +1,11 @@
+def f(r):
+  n = -1
+  m = -1
+  i = -1
+  while n != 0:
+      n = int(input())
+      if n > m:   
+          i += 1
+      m = n       
+  print(i)
+f(1)
