@@ -1,0 +1,27 @@
+#variant 5
+N = int(input('Строки')) 
+M = int(input('столбцы'))
+A = []
+for i in range(N):
+    B = []
+    for i in range(M):
+        B.append(int(input()))
+    A.append(B)
+print('исходный массив')
+for i in range(N):
+    for x in range(M):
+        print(A[i][x],end=' ')
+    print()
+for i in range(N):
+    s = min(A[i])
+    for x in range(M):
+        if s == A[i][x]:
+            if A[i][x] %2 == 0:
+                A[i][x] = 0
+            else:
+                A[i][x] = 1
+print('измененный массив')
+for i in range(N):
+    for x in range(M):
+        print(A[i][x],end=' ')
+    print()
