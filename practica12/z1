@@ -1,6 +1,2 @@
 #12 практика блок А задача 2
-def f(z,c): 
-    return z % c
-z= int(input())
-c= int(input())
-print(f(z,c))
+
