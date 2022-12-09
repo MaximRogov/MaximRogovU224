@@ -1,0 +1,30 @@
+file = open(r"C:\Users\maxf4\OneDrive\Desktop\Rogov-M.S_Y 224_vvod1.txt",encoding='utf-8')
+fl = open(r"C:\Users\maxf4\OneDrive\Desktop\Rogov-M.S_Y 224_vvod1.txt",encoding='utf-8')
+file2 = open(r"C:\Users\maxf4\OneDrive\Desktop\Rogov-M.S_Y 224_vivod1.txt", 'w+',encoding='utf-8')
+
+Q=file.readlines()
+N=fl.readlines(7)
+R=fl.readlines(5)
+I=fl.readlines(5)
+M=[int(x) for x in N]
+A=[int(x) for x in R]
+P=[int(x) for x in Q]
+T=[int(x) for x in I]
+a = [M,A,T]
+
+
+
+
+
+def matr(a): 
+  if len(a) <= 1:
+    return a
+  else:
+    return matr( [x for x in a[1:] if x < a[0]])+[a[0]]+matr([x for x in a[1:] if x >= a[0]])
+
+for i in range(3):
+  for j in range(3):
+    file2.write(str(a[i][j]))
+  file2.write('\n')
+file2.write(str(list(map(matr, a))))
+file2.close()
