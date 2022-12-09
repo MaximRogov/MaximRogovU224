@@ -1,8 +1,7 @@
-file = open(r"C:\Users\maxf4\OneDrive\Desktop\Rogov-M.S_Y 224_vvod1.txt",encoding='utf-8')
 fl = open(r"C:\Users\maxf4\OneDrive\Desktop\Rogov-M.S_Y 224_vvod1.txt",encoding='utf-8')
 file2 = open(r"C:\Users\maxf4\OneDrive\Desktop\Rogov-M.S_Y 224_vivod1.txt", 'w+',encoding='utf-8')
 
-Q=file.readlines()
+Q=f1.readlines()
 N=fl.readlines(7)
 R=fl.readlines(5)
 I=fl.readlines(5)
