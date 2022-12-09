@@ -1,0 +1,28 @@
+import requests
+import json
+import tkinter as tk 
+def F():
+    r = name.get()
+    response = requests.get('https://api.github.com/users/calypso')
+    f = json.loads(response.text)
+    q = dict.fromkeys(['company'], f['company'])
+    q2 = dict.fromkeys(['created_at'], f['created_at'])
+    q3 = dict.fromkeys(['email'], f['email'])
+    q4 = dict.fromkeys(['id'], f['id'])
+    q5 = dict.fromkeys(['name'], f['name'])
+    q6 = dict.fromkeys(['url'], f['url'])
+    jsoNN = (q,q2,q3,q4,q5,q6)
+    if r == 'calypso':
+        with open('C:\\Users\\maxf4\\OneDrive\\Desktop\\Automattic WordPress Calypso.json', 'w') as file:
+            json.dump(jsoNN,file)   
+    else:
+        print()
+window = tk.Tk()
+window.geometry('320x280')
+window.title("Интерфейс") 
+name = tk.Entry(window)
+name.grid(padx=110, pady=15)
+btn = tk.Button(window, text=" ) ", command=F)
+btn.grid(padx=80, pady=15)
+window.mainloop()
+F()
