@@ -2,7 +2,10 @@ package ru.vsuet.RogovT1;
 
 public class Main {
     public static void main(String[] args) {
-        Matrix m = new Matrix;
+        Matrix m = new Matrix(4);
         System.out.println(m);
+        System.out.println(m.diff());
+        System.out.println(m.mult());
+        System.out.println(m.sum());
     }
 }
