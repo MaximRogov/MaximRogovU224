@@ -1,0 +1,27 @@
+public class Main {
+    public static int str_count(String str, char ch) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+
+    public static void main(String[] args) {
+        String str1 = "Hello";
+        char ch1 = 'o';
+        System.out.println(str_count(str1, ch1)); 
+
+        String str2 = "Hello";
+        char ch2 = 'l';
+        System.out.println(str_count(str2, ch2));
+
+        String str3 = "";
+        char ch3 = 'z';
+        System.out.println(str_count(str3, ch3));
+    }
+}
