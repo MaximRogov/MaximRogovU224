@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите длину первого отрезка: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Введите длину второго отрезка: ");
+        double b = scanner.nextDouble();
+
+        System.out.print("Введите длину третьего отрезка: ");
+        double c = scanner.nextDouble();
+
+        if (a + b > c && a + c > b && b + c > a) {
+            System.out.println("Из этих отрезков можно составить треугольник");
+
+            double cosA = (b * b + c * c - a * a) / (2 * b * c);
+            double cosB = (a * a + c * c - b * b) / (2 * a * c);
+            double cosC = (a * a + b * b - c * c) / (2 * a * b);
+
+            double maxCos = Math.max(cosA, Math.max(cosB, cosC));
+            double maxAngle = (180.0 - Math.toDegrees(Math.acos(maxCos)));
+
+            System.out.println("Наибольший внешний угол треугольника: " + maxAngle + " градусов");
+        } else {
+            System.out.println("Из этих отрезков нельзя составить треугольник");
+        }
+    }
+}
