@@ -1,5 +1,0 @@
-#variant 5
-t = input()
-def F(t):
-  return (t.casefold())
-print(F("Fhcxfhb"))
