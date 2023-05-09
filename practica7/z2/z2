@@ -1,6 +1,0 @@
-#variant 5
-lst = [1,2,3,4,3,6,1,8,2,10]
-def f(lst):
-  d = set(lst)
-  print(list(d))
-f(lst)
