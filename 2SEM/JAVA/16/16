@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        int upperCaseCount = 0;
+        int lowerCaseCount = 0;
+        for (int i = 0; i < input.length(); i++) {
+            if (Character.isUpperCase(input.charAt(i))) {
+                upperCaseCount++;
+            } else if (Character.isLowerCase(input.charAt(i))) {
+                lowerCaseCount++;
+            }
+        }
+        if (upperCaseCount > lowerCaseCount) {
+            System.out.println(input.toUpperCase());
+        } else if (lowerCaseCount > upperCaseCount) {
+            System.out.println(input.toLowerCase());
+        } else {
+            System.out.println(input.toLowerCase());
+        }
+    }
+}
