@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String str = "abc abc ab abc ab acs acs";
+        String[] words = str.split(" ");
+        List<String> newWords = new ArrayList<>();
+        for (String word : words) {
+            if (!newWords.contains(word)) {
+                newWords.add(word);
+            }
+        }
+        String result = String.join(" ", newWords);
+        System.out.println(result);
+    }
+}
