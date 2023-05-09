@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        String firstLetter = name.substring(0, 1).toUpperCase();
+        String restLetters = name.substring(1).toLowerCase();
+        String formattedName = firstLetter + restLetters;
+        System.out.println("Привет, " + formattedName + "!");
+    }
+}
