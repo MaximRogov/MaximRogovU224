@@ -1,7 +1,7 @@
 import java.util.Deque;
 import java.util.LinkedList;
 
-public class Pr17 {
+public class Main {
     public static void main(String[] args){
         boolean line = correctness("(((())()");
         System.out.println(line);
