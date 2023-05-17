@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введите длину первой стороны: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Введите длину второй стороны: ");
+        double b = scanner.nextDouble();
+
+        System.out.print("Введите длину третьей стороны: ");
+        double c = scanner.nextDouble();
+
+        double p = (a + b + c) / 2;
+        double area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+
+        System.out.println("Площадь треугольника: " + area);
+    }
+}
